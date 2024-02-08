@@ -1,8 +1,5 @@
-# React + Vite
+# React lifting state up
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In this lesson we've learned how to lift state up in React. We've seen how to pass state and functions as props to child components, and how to use them to update the state of the parent component.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+If we have more than one component that needs to share the same state, we can lift the state up to the closest common ancestor of those components. This way, we can keep the state in sync between the components.
